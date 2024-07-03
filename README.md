@@ -23,19 +23,19 @@ public void Insert(int insertValue)
     // Implementation details for inserting a node
     // LeftNode and RightNode are managed based on the comparison of insertValue with Data.
 }
-```
+``` 
 **Tree Class**
 The `Tree` class manages the root of the binary search tree (root). It includes methods for inserting nodes (InsertNode) and performing traversals (PreorderTraversal, InorderTraversal, PostorderTraversal).
 
 **Constructor**
-```
+``` csharp
 public Tree()
 {
     root = null;
 }
 ```
 **InsertNode Method**
-```
+``` csharp
 public void InsertNode(int insertValue)
 {
     if (root == null)
@@ -47,7 +47,7 @@ public void InsertNode(int insertValue)
 **Preorder Traversal**
 `Preorder traversal` visits the root node first, then recursively visits the left subtree and right subtree.
 
-```
+``` csharp
 public void PreorderTraversal()
 {
     PreorderHelper(root);
@@ -56,7 +56,7 @@ public void PreorderTraversal()
 **Inorder Traversal**
 `Inorder traversal` recursively visits the left subtree, visits the root node, then recursively visits the right subtree (results in sorted order for a BST).
 
-```
+``` csharp
 public void InorderTraversal()
 {
     InorderHelper(root);
@@ -73,7 +73,7 @@ public void PostorderTraversal()
 ```
 **TreeTest Class (Testing Example)**
 The TreeTest class demonstrates how to use the Tree class by inserting random values into the tree and performing all three types of traversals.
-```
+``` csharp
 public class TreeTest
 {
     public static void Main(string[] args)
